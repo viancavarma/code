@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script>
+		function add()
+		{
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c= a+b;
+			document.getElementById("answer").value=c;
+		}
+		function sub()
+		{
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c= a-b;
+			document.getElementById("answer").value=c;
+		}
+		function mult()
+		{
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c= a*b;
+			document.getElementById("answer").value=c;
+		}
+		function div()
+		{
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c= a/b;
+			document.getElementById("answer").value=c;
+		}
+		function rem()
+		{
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c= a%b;
+			document.getElementById("answer").value=c;
+		}
+	</script>
+</head>
+<body align=center>
+	Enter the First number: <input id="first"><br>
+	Enter the Second number: <input id="second"><br>
+	<button onclick="add()">Add</button>
+	<button onclick="sub()">Subtract</button>
+	<button onclick="mult()">Multiply</button>
+	<button onclick="div()">Divide</button>
+	<button onclick="rem()">Remainder</button>
+	Result: <input id="answer">
+</body>
+</html>
